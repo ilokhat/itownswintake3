@@ -14,6 +14,7 @@ itowns.Fetcher.json('./layers/JSONLayers/DARK.json').then(function (result) {
 globeView.addEventListener(itowns.GLOBE_VIEW_EVENTS.GLOBE_INITIALIZED, () => {
     Promise.all(promises).then(function () {
         console.log("loading layers done")
+        console.log("changed in windows")
     })
 });
 
